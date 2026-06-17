@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore-build:2.0.0 AS build
+FROM docker.io/microsoft/aspnetcore-build:2.0.1 AS build
 WORKDIR /code
 COPY . .
 RUN dotnet restore
